@@ -1,0 +1,259 @@
+$primary: #4e73df;
+$secondary:#fff;
+
+
+.Dashboard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+    header{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        position: relative;
+        background-color: $primary;
+        color: #fff;
+        align-items: center ;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+
+        
+
+        .logo{
+            
+            padding-left: 20px;
+            font-size: 20px;
+            
+        }
+
+        nav{
+            padding-left: 30px;
+        }
+
+        select{
+            background-color: transparent;
+            color: #fff;
+        }
+
+        button{
+            position: absolute;
+            right: 40px;
+            padding: 5px;
+            border-radius: 0.35rem;
+            color: $primary;
+            border: 1px solid #fff;
+            transition: .3s ease;
+            &:hover{
+              background-color: transparent;
+              color: #fff;
+              transition: .3s ease;
+            }
+        }
+    }
+
+  .ItemAlertWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .addItemAlert{
+        max-width: 300px;
+        padding: 30px;
+        border-radius: 0.35rem;
+        color: $primary;
+        font-size: 18px;
+        box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    }  
+  } 
+
+    .AddItem{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-y: scroll;
+
+       
+
+        form{
+            margin-top: 10%;
+            width: 600px;
+            padding: 20px;
+            background-color: $primary;
+            border-radius: 0.35rem;
+            display:flex;
+            flex-direction: column;
+             align-items: center;
+            box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+            
+             h1{
+                font-size: 20px;
+                color: #fff;
+                margin-bottom: 20px;
+             }
+
+            .inputGroup{
+               width: 90%;
+               color: #fff;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+
+               input, textarea,select{
+                height: 30px;
+                width: 300px;
+                padding: 10px;
+                color: $primary;
+                cursor: pointer;
+                font-size: 16px;
+                margin-left: 10px;
+                margin: 20px;
+                border-radius: 0.35rem;
+            }  
+
+
+            textarea{
+                min-height: 200px;
+                min-width: 400px;
+                max-height: 400px;
+            }
+
+            label{
+                font-size:16px;
+            }
+
+
+            select{
+                padding: 0;
+            }
+
+
+            }
+
+
+            button{
+                padding: 10px;
+                font-size: 16px;
+                background-color: #fff;
+                color: $primary;
+                border-radius: 0.35rem;
+                border: 1px solid #fff;
+                transition: .3s ease;
+            
+                &:hover{
+                   background-color: transparent;
+                   color: #fff;
+                   transition: .3s ease;
+                }
+            }
+        }
+    }
+
+    .DashboardOverview{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        scroll-behavior:smooth;
+        
+
+        .Card {
+            position: relative;
+            height: 500px;
+            margin: 15px    ;
+            width:  calc(25% - 30px);
+            overflow: hidden;
+            border-radius: 0.35rem;
+            box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+            background-color: $secondary;
+
+            img {
+                height: 60%;
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: transparent;
+            }
+
+            .description {
+                padding: 20px;
+                height: 20%;
+                
+            }
+
+            h1 {
+                font-size: 18px;
+                line-height: 30px;
+                
+            }
+            h2{
+                position: absolute;
+                bottom: 80px;
+                font-size: 16px;
+            }
+
+           
+
+            .buttonGroup {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+                display: flex;
+                margin-top: 15px;
+
+                button {
+                    padding: 5px;
+                    font-size: 16px;
+                    transition: 0.3s ease;
+                    border-radius: 0.35rem;
+                    color: #fff;
+                }
+
+
+                
+
+
+                button:nth-child(1) {
+
+                    background-color: $primary;
+                    border: 1px solid $primary;
+
+
+                    &:hover {
+                        background-color: transparent;
+                        color: $primary;
+                        transition: 0.3s ease;
+
+
+                    }
+
+                }
+
+
+                button:nth-child(2) {
+                    margin-left: 10px;
+                    background-color: red;
+                    border: 1px solid red;
+                    &:hover {
+                        background-color: transparent;
+                        color: red;
+                        transition: 0.3s ease;
+
+
+                    }
+                    
+
+
+                }
+            }
+        }
+    }
+    
+
+
+}
